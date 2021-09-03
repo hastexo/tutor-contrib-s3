@@ -17,4 +17,7 @@ is_secure = {{ "True" if S3_USE_SSL else "False" }}
 host = {{ S3_HOST }}:{{ S3_PORT }}
 calling_format = boto.s3.connection.OrdinaryCallingFormat""")
 
-MEDIA_ROOT.update("openedx/media/")
+VIDEO_IMAGE_SETTINGS["STORAGE_KWARGS"]["location"] = "openedx/media/"
+VIDEO_TRANSCRIPTS_SETTINGS["STORAGE_KWARGS"]["location"] = "openedx/media/"
+
+
