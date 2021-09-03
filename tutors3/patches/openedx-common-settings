@@ -3,8 +3,6 @@ VIDEO_IMAGE_SETTINGS["STORAGE_KWARGS"]["location"] = "openedx/media/"
 VIDEO_TRANSCRIPTS_SETTINGS["STORAGE_KWARGS"]["location"] = "openedx/media/"
 GRADES_DOWNLOAD["STORAGE_KWARGS"]["location"] = GRADES_DOWNLOAD["STORAGE_KWARGS"]["location"].lstrip("/")
 
-FILE_UPLOAD_STORAGE_BUCKET_NAME = "{{ S3_STORAGE_BUCKET }}"
-
 AWS_S3_HOST = "{{ S3_HOST }}"
 AWS_S3_PORT = {{ S3_PORT }}
 AWS_S3_REGION_NAME = "eu-west-2"
