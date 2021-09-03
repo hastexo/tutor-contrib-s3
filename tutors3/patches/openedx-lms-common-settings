@@ -1,1 +1,5 @@
 ORA2_FILEUPLOAD_BACKEND = "s3"
+# Fix media files paths
+PROFILE_IMAGE_BACKEND["options"]["location"] = os.path.join(
+    MEDIA_ROOT, "profile-images/"
+)
