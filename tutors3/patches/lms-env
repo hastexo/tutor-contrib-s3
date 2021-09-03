@@ -1,12 +1,2 @@
 "FILE_UPLOAD_STORAGE_BUCKET_NAME": "{{ S3_FILE_UPLOAD_BUCKET }}",
 "COURSE_IMPORT_EXPORT_BUCKET": "{{ S3_COURSE_IMPORT_EXPORT_BUCKET }}",
-"PROFILE_IMAGE_BACKEND": {
-  "class": "storages.backends.s3boto.S3BotoStorage",
-  "options": {
-    "bucket": "{{ S3_PROFILE_IMAGE_BUCKET }}",
-    "custom_domain": "{{ S3_PROFILE_IMAGE_CUSTOM_DOMAIN }}",
-    "headers": {
-      "Cache-Control": "max-age-{{ S3_PROFILE_IMAGE_MAX_AGE }}"
-    }
-  }
-}
