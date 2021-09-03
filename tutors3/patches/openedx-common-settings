@@ -7,6 +7,7 @@ FILE_UPLOAD_STORAGE_BUCKET_NAME = "{{ S3_STORAGE_BUCKET }}"
 
 AWS_S3_HOST = "{{ S3_HOST }}"
 AWS_S3_PORT = {{ S3_PORT }}
+AWS_S3_REGION_NAME = "eu-west-2"
 AWS_S3_USE_SSL = {{ "True" if S3_USE_SSL else "False" }}
 AWS_S3_SECURE_URLS = {{ "True" if S3_USE_SSL else "False" }}
 AWS_S3_CALLING_FORMAT = "boto.s3.connection.OrdinaryCallingFormat"
