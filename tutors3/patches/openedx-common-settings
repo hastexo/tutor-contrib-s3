@@ -1,9 +1,19 @@
+DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+VIDEO_IMAGE_SETTINGS["STORAGE_KWARGS"]["location"] = "openedx/media/"
+VIDEO_TRANSCRIPTS_SETTINGS["STORAGE_KWARGS"]["location"] = "openedx/media/"
+GRADES_DOWNLOAD["STORAGE_KWARGS"]["location"] = GRADES_DOWNLOAD["STORAGE_KWARGS"]["location"].lstrip("/")
+
+FILE_UPLOAD_STORAGE_BUCKET_NAME = "{{ S3_STORAGE_BUCKET }}"
+
 AWS_S3_HOST = "{{ S3_HOST }}"
 AWS_S3_PORT = {{ S3_PORT }}
 AWS_S3_USE_SSL = {{ "True" if S3_USE_SSL else "False" }}
 AWS_S3_SECURE_URLS = {{ "True" if S3_USE_SSL else "False" }}
 AWS_S3_CALLING_FORMAT = "boto.s3.connection.OrdinaryCallingFormat"
 AWS_AUTO_CREATE_BUCKET = {{ "True" if S3_AUTO_CREATE_BUCKET else "False" }}
+AWS_S3_SIGNATURE_VERSION = "s3v4"
+AWS_DEFAULT_ACL = None
+AWS_QUERYSTRING_EXPIRE = 7 * 24 * 60 * 60  # 1 week: this is necessary to generate valid download urls
 
 # Configuring boto is required for ora2 because ora2 does not read
 # host/port/ssl settings from django. Hence this hack.
@@ -17,7 +27,5 @@ is_secure = {{ "True" if S3_USE_SSL else "False" }}
 host = {{ S3_HOST }}:{{ S3_PORT }}
 calling_format = boto.s3.connection.OrdinaryCallingFormat""")
 
-VIDEO_IMAGE_SETTINGS["STORAGE_KWARGS"]["location"] = "openedx/media/"
-VIDEO_TRANSCRIPTS_SETTINGS["STORAGE_KWARGS"]["location"] = "openedx/media/"
 
 
