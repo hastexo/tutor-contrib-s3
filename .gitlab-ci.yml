@@ -1,0 +1,15 @@
+image: python
+
+py38:
+  image: python:3.8
+  stage: build
+  script:
+    - pip install tox
+    - tox -e py38,flake8
+
+py39:
+  image: python:3.9
+  stage: build
+  script:
+    - pip install tox
+    - tox -e py39,flake8
