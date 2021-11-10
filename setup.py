@@ -29,8 +29,8 @@ setup(
     long_description=readme,
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
-    python_requires=">=3.5",
-    install_requires=["tutor-openedx"],
+    python_requires=">=3.8",
+    install_requires=["tutor"],
     entry_points={"tutor.plugin.v0": ["s3 = tutors3.plugin"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -38,8 +38,7 @@ setup(
         "License :: OSI Approved :: GNU Affero General Public License v3",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
     ],
 )
