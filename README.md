@@ -1,8 +1,11 @@
 Object storage for Open edX with S3
 ===================================
 
-This is a plugin for [Tutor](https://docs.tutor.overhang.io) that
-allows edX to be configured to use a custom S3 host.
+This is a **experimental** plugin for
+[Tutor](https://docs.tutor.overhang.io) that allows Open edX to be
+configured to use a custom S3 host.
+
+**Do not use this plugin in production Tutor/Open edX environment.**
 
 Installation
 ------------
@@ -33,9 +36,9 @@ Configuration
 These values can be modified with `tutor config save --set
 PARAM_NAME=VALUE` commands.
 
-You'll need to allow anonymous GET access to profile images. Assuming a
-properly configured s3cmd, first create the `S3_PROFILE_IMAGE_BUCKET`
-with public ACL set:
+Currently, you'll need to allow anonymous GET access to profile
+images. Assuming a properly configured s3cmd, first create the
+`S3_PROFILE_IMAGE_BUCKET` with public ACL set:
 
     s3cmd mb s3://openedx --acl-public
 
@@ -58,3 +61,8 @@ substituting `openedx` for the configured value of
 Next, run:
 
     s3cmd setpolicy policy.json s3://openedx
+
+*This requirement will be removed before the first proper release of
+this plugin, and it will then use presigned URLs instead. If after
+that transition you continue to use the same S3 bucket, you will need
+to update your bucket and object ACLs.*
