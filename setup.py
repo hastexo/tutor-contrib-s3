@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-with io.open(os.path.join(here, "README.rst"), "rt", encoding="utf8") as f:
+with io.open(os.path.join(here, "README.md"), "rt", encoding="utf8") as f:
     readme = f.read()
 
 setup(
@@ -20,6 +20,7 @@ setup(
     author_email='pypi@hastexo.com',
     description="A Tutor plugin for object storage via RADOS Gateway",
     long_description=readme,
+    long_description_content_type='text/markdown',
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
     python_requires=">=3.8",
