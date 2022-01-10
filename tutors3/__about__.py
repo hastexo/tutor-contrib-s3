@@ -5,4 +5,4 @@ import pkg_resources
 # Single-source package definition as suggested (among several
 # options) by:
 # https://packaging.python.org/guides/single-sourcing-package-version/
-__version__ = pkg_resources.get_distribution('tutor-s3').version
+__version__ = pkg_resources.get_distribution('tutor-contrib-s3').version

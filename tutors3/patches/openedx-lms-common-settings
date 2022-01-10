@@ -1,1 +1,8 @@
-ORA2_FILEUPLOAD_BACKEND = "s3"
+PROFILE_IMAGE_BACKEND = {
+    "class": DEFAULT_FILE_STORAGE,
+    "options": {
+        "location": PROFILE_IMAGE_BACKEND["options"]["location"].lstrip("/"),
+        # the following non empty property is necessary in development
+        "base_url": "dummyprofileimagebaseurl",
+    },
+}
