@@ -1,5 +1,8 @@
 ## Unreleased
 
+* [Enhancement] Rename from tutor-s3 to tutor-contrib-s3 (this plugin
+  is not affiliated with [the Tutor
+  project](https://docs.tutor.overhang.io/)).
 * [Enhancement] Support S3Boto3Storage, instead of the deprecated
   S3BotoStorage.
 * [Enhancement] No longer rely on buckets with a public ACL, use
