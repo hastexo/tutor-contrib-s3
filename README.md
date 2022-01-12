@@ -31,7 +31,6 @@ Configuration
 * `S3_USE_SSL` (default: `true`)
 * `S3_STORAGE_BUCKET` (default: `"openedx"`)
 * `S3_FILE_UPLOAD_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
-* `S3_COURSE_IMPORT_EXPORT_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
 * `S3_PROFILE_IMAGE_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
 * `S3_GRADE_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
 * `S3_ADDRESSING_STYLE` (default: `"virtual"`)

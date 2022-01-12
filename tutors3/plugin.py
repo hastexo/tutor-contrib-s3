@@ -15,7 +15,6 @@ config = {
         "USE_SSL": "True",
         "STORAGE_BUCKET": "openedx",
         "FILE_UPLOAD_BUCKET": "{{ S3_STORAGE_BUCKET }}",
-        "COURSE_IMPORT_EXPORT_BUCKET": "{{ S3_STORAGE_BUCKET }}",
         "PROFILE_IMAGE_BUCKET": "{{ S3_STORAGE_BUCKET }}",
         "GRADE_BUCKET": "{{ S3_STORAGE_BUCKET }}",
         "PROFILE_IMAGE_CUSTOM_DOMAIN": "",
