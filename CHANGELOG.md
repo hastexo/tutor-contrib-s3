@@ -1,4 +1,4 @@
-## Unreleased
+## Version 0.1.0 (2022-01-12)
 
 * [Enhancement] Rename from tutor-s3 to tutor-contrib-s3 (this plugin
   is not affiliated with [the Tutor
