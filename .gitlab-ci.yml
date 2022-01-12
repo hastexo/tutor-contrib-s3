@@ -5,11 +5,11 @@ py38:
   stage: build
   script:
     - pip install tox
-    - tox -e py38,flake8
+    - tox -e gitlint,py38,flake8
 
 py39:
   image: python:3.9
   stage: build
   script:
     - pip install tox
-    - tox -e py39,flake8
+    - tox -e gitlint,py39,flake8
