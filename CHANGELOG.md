@@ -1,4 +1,4 @@
-## Unreleased
+## Version 0.1.1 (2022-01-13)
 
 * [Fix] `S3_FILE_UPLOAD_BUCKET` parameter was ignored. Use it to set
   `FILE_UPLOAD_STORAGE_BUCKET_NAME`.
