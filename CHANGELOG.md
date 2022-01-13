@@ -1,3 +1,8 @@
+## Unreleased
+
+* [Fix] `S3_FILE_UPLOAD_BUCKET` parameter was ignored. Use it to set
+  `FILE_UPLOAD_STORAGE_BUCKET_NAME`.
+
 ## Version 0.1.0 (2022-01-12)
 
 * [Enhancement] Rename from tutor-s3 to tutor-contrib-s3 (this plugin
