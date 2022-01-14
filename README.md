@@ -15,9 +15,9 @@ S3-compatible storage platform *as part of Tutor,* please consider the
 Installation
 ------------
 
-    pip install tutor-contrib-s3
+    pip install git+https://github.com/hastexo/tutor-contrib-s3@v0.1.1
 
-Then, to enable this plugin, run::
+Then, to enable this plugin, run:
 
     tutor plugins enable s3
 
