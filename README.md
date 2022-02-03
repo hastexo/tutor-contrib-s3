@@ -27,6 +27,7 @@ Configuration
 * `OPENEDX_AWS_ACCESS_KEY` (default: `""`)
 * `OPENEDX_AWS_SECRET_ACCESS_KEY` (default: `""`)
 * `S3_HOST` (default: `"s3.amazonaws.com"`)
+* `S3_REGION` (default: `""`)
 * `S3_PORT` (default: `443`)
 * `S3_USE_SSL` (default: `true`)
 * `S3_STORAGE_BUCKET` (default: `"openedx"`)
@@ -38,3 +39,10 @@ Configuration
 
 These values can be modified with `tutor config save --set
 PARAM_NAME=VALUE` commands.
+
+Depending on the nature and configuration of your S3-compatible
+service, some of these values may be required to set. For example, on
+AWS S3, you will need to set `S3_REGION` to a non-empty value. For a
+Ceph Object Gateway that doesn’t set
+[rgw_dns_name](https://docs.ceph.com/en/latest/radosgw/config-ref/#confval-rgw_dns_name),
+you will need `S3_ADDRESSING_STYLE: path`.
