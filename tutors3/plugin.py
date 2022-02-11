@@ -9,8 +9,8 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 config = {
     "defaults": {
         "VERSION": __version__,
-        "HOST": "s3.amazonaws.com",
-        "PORT": "443",
+        "HOST": None,
+        "PORT": None,
         "REGION": "",
         "USE_SSL": "True",
         "STORAGE_BUCKET": "openedx",
@@ -19,7 +19,7 @@ config = {
         "GRADE_BUCKET": "{{ S3_STORAGE_BUCKET }}",
         "PROFILE_IMAGE_CUSTOM_DOMAIN": "",
         "PROFILE_IMAGE_MAX_AGE": "31536000",
-        "ADDRESSING_STYLE": "virtual",
+        "ADDRESSING_STYLE": "auto",
         "SIGNATURE_VERSION": "s3v4",
     },
 }
