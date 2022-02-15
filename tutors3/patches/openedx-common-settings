@@ -10,7 +10,7 @@ FILE_UPLOAD_STORAGE_BUCKET_NAME = "{{ S3_FILE_UPLOAD_BUCKET }}"
 AWS_S3_SIGNATURE_VERSION = "{{ S3_SIGNATURE_VERSION }}"
 
 {% if S3_HOST %}
-AWS_S3_ENDPOINT_URL = "{{ "https" if ENABLE_HTTPS else "http" }}://{{ S3_HOST }}{% if S3_PORT %}:{{ S3_PORT }}{% endif %}"
+AWS_S3_ENDPOINT_URL = "{{ "https" if S3_USE_SSL else "http" }}://{{ S3_HOST }}{% if S3_PORT %}:{{ S3_PORT }}{% endif %}"
 {% endif %}
 
 AWS_S3_USE_SSL = {{ "True" if S3_USE_SSL else "False" }}
