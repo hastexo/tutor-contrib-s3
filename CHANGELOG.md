@@ -1,3 +1,13 @@
+## Unreleased
+ 
+* [Fix] Rather than incorrectly relying on `ENABLE_HTTPS`, honour
+  `S3_USE_SSL` when setting `AWS_S3_ENDPOINT_URL`.
+* [Fix] Only populate the `AWS_S3_ENDPOINT_URL` Open edX setting if
+  `S3_HOST` is set, and recommend leaving `S3_HOST` and `S3_PORT`
+  unset if using AWS S3 (as opposed to an S3-compatible API).
+* [Fix] Default for `S3_ADDRESSING_STYLE` is now `"auto"` to use 
+  the same default as the ORA2 S3 backend, and the AWS S3 CLI.
+
 ## Version 0.1.1 (2022-01-13)
 
 * [Fix] `S3_FILE_UPLOAD_BUCKET` parameter was ignored. Use it to set
