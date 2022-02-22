@@ -1,4 +1,4 @@
-## Unreleased
+## Version 0.1.2 (2022-02-22)
  
 * [Fix] Rather than incorrectly relying on `ENABLE_HTTPS`, honour
   `S3_USE_SSL` when setting `AWS_S3_ENDPOINT_URL`.
