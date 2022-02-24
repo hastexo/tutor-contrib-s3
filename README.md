@@ -36,6 +36,8 @@ Configuration
 * `S3_GRADE_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
 * `S3_ADDRESSING_STYLE` (default: `"auto"`)
 * `S3_SIGNATURE_VERSION` (default: `"s3v4"`)
+* `S3_CUSTOM_DOMAIN` (default: `None`)
+* `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` (default: `None`)
 
 These values can be modified with `tutor config save --set
 PARAM_NAME=VALUE` commands.
@@ -50,3 +52,6 @@ service, some of these values may be required to set.
 * For a Ceph Object Gateway that doesn’t set
   [rgw_dns_name](https://docs.ceph.com/en/latest/radosgw/config-ref/#confval-rgw_dns_name),
   you will need `S3_ADDRESSING_STYLE: path`.
+* Due to limitations in Open edX, if you are using `s3v4` signatures, your 
+  `S3_PROFILE_IMAGE_BUCKET` must have a public ACL and you must set 
+  `S3_PROFILE_IMAGE_CUSTOM_DOMAIN`.
