@@ -3,5 +3,6 @@ PROFILE_IMAGE_BACKEND = {
     "options": {
         "bucket": "{{ S3_PROFILE_IMAGE_BUCKET }}",
         "location": PROFILE_IMAGE_BACKEND["options"]["location"].lstrip("/"),
+        {% if S3_PROFILE_IMAGE_CUSTOM_DOMAIN %}"custom_domain": "{{ S3_PROFILE_IMAGE_CUSTOM_DOMAIN }}",{% endif %}
     },
 }
