@@ -21,7 +21,7 @@ config = {
         "PROFILE_IMAGE_MAX_AGE": "31536000",
         "ADDRESSING_STYLE": "auto",
         "SIGNATURE_VERSION": "s3v4",
-        "CUSTOM_DOMAIN": None,
+        "CUSTOM_DOMAIN": "",
     },
 }
 
