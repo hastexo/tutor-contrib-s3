@@ -1,4 +1,4 @@
-## Unreleased
+## Version 0.2.0 (2022-03-01)
 * [Enhancement] Add `S3_CUSTOM_DOMAIN` to set a custom domain for S3.
 * [Enhancement] Add `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` to set custom domain for 
   profile images.
