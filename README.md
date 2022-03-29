@@ -26,9 +26,9 @@ Configuration
 
 * `OPENEDX_AWS_ACCESS_KEY` (default: `""`)
 * `OPENEDX_AWS_SECRET_ACCESS_KEY` (default: `""`)
-* `S3_HOST` (default: `None`) - set only if using any other service than AWS S3
-* `S3_PORT` (default: `None`) - set only if using any other service than AWS S3
-* `S3_REGION` (default: ``)
+* `S3_HOST` (default: `""`) - set only if using any other service than AWS S3
+* `S3_PORT` (default: `""`) - set only if using any other service than AWS S3
+* `S3_REGION` (default: `""`)
 * `S3_USE_SSL` (default: `true`)
 * `S3_STORAGE_BUCKET` (default: `"openedx"`)
 * `S3_FILE_UPLOAD_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
@@ -37,7 +37,7 @@ Configuration
 * `S3_ADDRESSING_STYLE` (default: `"auto"`)
 * `S3_SIGNATURE_VERSION` (default: `"s3v4"`)
 * `S3_CUSTOM_DOMAIN` (default: `""`)
-* `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` (default: `None`)
+* `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` (default: `""`)
 
 These values can be modified with `tutor config save --set
 PARAM_NAME=VALUE` commands.
