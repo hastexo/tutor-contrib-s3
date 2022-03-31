@@ -1,4 +1,4 @@
-## Unreleased
+## Version 0.2.1 (2022-03-31)
 
 * [Fix] Change the defaults for `S3_HOST`, `S3_PORT`, and
   `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` from `None` to the empty
