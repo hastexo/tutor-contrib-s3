@@ -36,7 +36,7 @@ Configuration
 * `S3_GRADE_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
 * `S3_ADDRESSING_STYLE` (default: `"auto"`)
 * `S3_SIGNATURE_VERSION` (default: `"s3v4"`)
-* `S3_CUSTOM_DOMAIN` (default: `""`)
+* `S3_CUSTOM_DOMAIN` (default: `""`) - do not set if you are using AWS S3
 * `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` (default: `""`)
 
 These values can be modified with `tutor config save --set
@@ -46,7 +46,8 @@ Depending on the nature and configuration of your S3-compatible
 service, some of these values may be required to set.
 
 * If using AWS S3, you will need to set `S3_REGION` to a non-empty value. 
-  And make sure `S3_ADDRESSING_STYLE` is set to `"auto"`.
+  And make sure `S3_ADDRESSING_STYLE` is set to `"auto"` (default) and 
+  `S3_CUSTOM_DOMAIN` is set to `""` (default).
 * If you want to use an alternative S3-compatible service, you need to set the 
   `S3_HOST` and `S3_PORT` parameters.
 * For a Ceph Object Gateway that doesn’t set
