@@ -2,8 +2,8 @@ Object storage for Open edX with S3
 ===================================
 
 This is an **experimental** plugin for
-[Tutor](https://docs.tutor.overhang.io) that allows Open edX to be
-configured with custom S3 settings, including the use of an S3
+[Tutor](https://docs.tutor.overhang.io) that allows [Open edX](https://openedx.org/) to be
+configured with custom S3 settings, including the use of an [S3](https://aws.amazon.com/s3/)
 API-compatible storage platform — such as [Ceph with
 radosgw](https://docs.ceph.com/en/latest/radosgw/index.html).
 
@@ -21,8 +21,8 @@ Then, to enable this plugin, run:
 
     tutor plugins enable s3
 
-Configuration
--------------
+Plugin configuration
+--------------------
 
 * `OPENEDX_AWS_ACCESS_KEY` (default: `""`)
 * `OPENEDX_AWS_SECRET_ACCESS_KEY` (default: `""`)
@@ -39,8 +39,9 @@ Configuration
 * `S3_CUSTOM_DOMAIN` (default: `""`) - do not set if you are using AWS S3
 * `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` (default: `""`)
 
-These values can be modified with `tutor config save --set
-PARAM_NAME=VALUE` commands.
+These values can be modified by the `tutor config save --set
+PARAM_NAME=VALUE` command, or by setting them in `$(tutor config
+printroot)/config.yaml`.
 
 Depending on the nature and configuration of your S3-compatible
 service, some of these values may be required to set.
@@ -56,3 +57,9 @@ service, some of these values may be required to set.
 * Due to limitations in Open edX, if you are using `s3v4` signatures, your 
   `S3_PROFILE_IMAGE_BUCKET` must have a public ACL and you must set 
   `S3_PROFILE_IMAGE_CUSTOM_DOMAIN`.
+
+Guide for configuring buckets for AWS S3
+----------------------------------------
+
+Follow [this guide](README-aws.md) to configure buckets on AWS S3 to
+be used with Open edX.
