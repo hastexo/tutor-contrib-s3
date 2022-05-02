@@ -4,5 +4,8 @@ PROFILE_IMAGE_BACKEND = {
         "bucket": "{{ S3_PROFILE_IMAGE_BUCKET }}",
         "location": PROFILE_IMAGE_BACKEND["options"]["location"].lstrip("/"),
         {% if S3_PROFILE_IMAGE_CUSTOM_DOMAIN %}"custom_domain": "{{ S3_PROFILE_IMAGE_CUSTOM_DOMAIN }}",{% endif %}
+        # A non empty base_url is necessary in development as it will be used
+        # to build a static url for the profile images.
+        "base_url": "dummyprofileimagebaseurl",
     },
 }
