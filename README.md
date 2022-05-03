@@ -32,7 +32,8 @@ Plugin configuration
 * `S3_USE_SSL` (default: `true`)
 * `S3_STORAGE_BUCKET` (default: `"openedx"`)
 * `S3_FILE_UPLOAD_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
-* `S3_PROFILE_IMAGE_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
+* `S3_PROFILE_IMAGE_BUCKET` (default: `""`, meaning profile images are
+  stored in the filesystem, rather than in S3)
 * `S3_GRADE_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
 * `S3_ADDRESSING_STYLE` (default: `"auto"`)
 * `S3_SIGNATURE_VERSION` (default: `"s3v4"`)
