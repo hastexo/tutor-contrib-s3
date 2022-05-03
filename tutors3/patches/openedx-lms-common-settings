@@ -1,3 +1,4 @@
+{% if S3_PROFILE_IMAGE_BUCKET %}
 PROFILE_IMAGE_BACKEND = {
     "class": DEFAULT_FILE_STORAGE,
     "options": {
@@ -9,3 +10,4 @@ PROFILE_IMAGE_BACKEND = {
         "base_url": "dummyprofileimagebaseurl",
     },
 }
+{% endif %}
