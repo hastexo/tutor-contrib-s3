@@ -2,6 +2,15 @@
 !.gitignore
 TODO
 __pycache__
-*.egg-info/
 /build/
 /dist/
+
+# python virtual environment
+venv*
+
+# output tox files and folders
+*.egg-info/
+.eggs
+.tox
+tests
+!tests/.placeholder
