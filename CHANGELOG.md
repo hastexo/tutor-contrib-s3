@@ -1,3 +1,13 @@
+## Unreleased
+
+* [Enhancement] If `S3_PROFILE_IMAGE_BUCKET` is not set, store profile 
+  images in the filesystem. This matches Tutor's default behavior (when 
+  running without plugins). If a bucket name is provided, upload profile 
+  images to S3.
+* [Fix] Add a dummy `base_url` to profile image backend to prevent
+  it from crashing LMS when running with `DEBUG=True` (such as when using
+  `tutor dev`).
+
 ## Version 0.2.1 (2022-03-31)
 
 * [Fix] Change the defaults for `S3_HOST`, `S3_PORT`, and
