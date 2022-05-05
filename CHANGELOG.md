@@ -1,4 +1,4 @@
-## Unreleased
+## Version 0.2.2 (2022-05-05)
 
 * [Enhancement] If `S3_PROFILE_IMAGE_BUCKET` is not set, store profile 
   images in the filesystem. This matches Tutor's default behavior (when 
