@@ -1,3 +1,6 @@
+## Unreleased
+* [Bug fix] Change the patch format to fit yaml config files since Tutor 14 and Nutmeg.
+
 ## Version 0.2.2 (2022-05-05)
 
 * [Enhancement] If `S3_PROFILE_IMAGE_BUCKET` is not set, store profile 
