@@ -1,3 +1,7 @@
+## Unreleased
+
+* [Enhancement] Use Tutor v1 plugin API.
+
 ## Version 0.2.2 (2022-05-05)
 
 * [Enhancement] If `S3_PROFILE_IMAGE_BUCKET` is not set, store profile 
