@@ -1,4 +1,4 @@
-## Unreleased
+## Version 0.3.0 (2022-06-29)
 
 * [Enhancement] Use Tutor v1 plugin API.
 
