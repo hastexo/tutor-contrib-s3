@@ -12,6 +12,25 @@ This plugin is meant to make Tutor-managed Open edX interface with S3
 S3-compatible storage platform *as part of Tutor,* please consider the
 [minio](https://github.com/overhangio/tutor-minio) Tutor plugin.
 
+Version compatibility matrix
+----------------------------
+
+You must install a supported release of this plugin to match the Open
+edX and Tutor version you are deploying. If you are installing this
+plugin from a branch in this Git repository, you must select the
+appropriate one:
+
+| Open edX release | Tutor version     | Plugin branch | Plugin release |
+|------------------|-------------------|---------------|----------------|
+| Lilac            | `>=12.0, <13`     | Not supported | Not supported  |
+| Maple            | `>=13.2, <14`[^1] | `maple`       | 0.3.x          |
+| Nutmeg           | `>=14.0, <15`     | `main`        | 1.x.x          |
+
+[^1]: For Open edX Maple and Tutor 13, you must run version 13.2.0 or
+    later. That is because this plugin uses the Tutor v1 plugin API,
+    [which was introduced with that
+    release](https://github.com/overhangio/tutor/blob/master/CHANGELOG.md#v1320-2022-04-24).
+
 Installation
 ------------
 
