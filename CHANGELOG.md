@@ -1,4 +1,4 @@
-## Unreleased
+## Version 1.0.0 (2022-08-03)
 
 * [BREAKING CHANGE] Support Tutor 14 and Open edX Nutmeg. This entails
   a configuration format change from JSON to YAML, meaning that from
