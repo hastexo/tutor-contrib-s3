@@ -25,6 +25,7 @@ appropriate one:
 | Lilac            | `>=12.0, <13`     | Not supported | Not supported  |
 | Maple            | `>=13.2, <14`[^1] | `maple`       | 0.3.x          |
 | Nutmeg           | `>=14.0, <15`     | `main`        | 1.x.x          |
+| Olive            | `>=15.0, <16`     | `main`        | 1.x.x          |
 
 [^1]: For Open edX Maple and Tutor 13, you must run version 13.2.0 or
     later. That is because this plugin uses the Tutor v1 plugin API,
