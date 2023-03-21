@@ -1,4 +1,4 @@
-## Unreleased
+## Version 1.1.0 (2023-03-21)
 
 * [Enhancement] Support Tutor 15 and Open edX Olive.
 
