@@ -24,7 +24,7 @@ setup(
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
     python_requires=">=3.8",
-    install_requires=["tutor <16, >=14.0.0"],
+    install_requires=["tutor <17, >=14.0.0"],
     setup_requires=["setuptools-scm"],
     entry_points={"tutor.plugin.v1": ["s3 = tutors3.plugin"]},
     classifiers=[
@@ -35,5 +35,7 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
     ],
 )

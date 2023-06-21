@@ -13,3 +13,17 @@ py39:
   script:
     - pip install tox
     - tox -e gitlint,py39,flake8
+
+py310:
+  image: python:3.10
+  stage: build
+  script:
+    - pip install tox
+    - tox -e gitlint,py310,flake8
+
+py311:
+  image: python:3.11
+  stage: build
+  script:
+    - pip install tox
+    - tox -e gitlint,py311,flake8

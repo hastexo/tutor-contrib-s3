@@ -26,6 +26,7 @@ appropriate one:
 | Maple            | `>=13.2, <14`[^1] | `maple`       | 0.3.x          |
 | Nutmeg           | `>=14.0, <15`     | `main`        | 1.x.x          |
 | Olive            | `>=15.0, <16`     | `main`        | 1.x.x          |
+| Palm             | `>=16.0, <17`     | `main`        | 1.x.x          |
 
 [^1]: For Open edX Maple and Tutor 13, you must run version 13.2.0 or
     later. That is because this plugin uses the Tutor v1 plugin API,
@@ -67,16 +68,16 @@ printroot)/config.yaml`.
 Depending on the nature and configuration of your S3-compatible
 service, some of these values may be required to set.
 
-* If using AWS S3, you will need to set `S3_REGION` to a non-empty value. 
-  And make sure `S3_ADDRESSING_STYLE` is set to `"auto"` (default) and 
+* If using AWS S3, you will need to set `S3_REGION` to a non-empty value.
+  And make sure `S3_ADDRESSING_STYLE` is set to `"auto"` (default) and
   `S3_CUSTOM_DOMAIN` is set to `""` (default).
-* If you want to use an alternative S3-compatible service, you need to set the 
+* If you want to use an alternative S3-compatible service, you need to set the
   `S3_HOST` and `S3_PORT` parameters.
 * For a Ceph Object Gateway that doesn’t set
   [rgw_dns_name](https://docs.ceph.com/en/latest/radosgw/config-ref/#confval-rgw_dns_name),
   you will need `S3_ADDRESSING_STYLE: path`.
-* Due to limitations in Open edX, if you are using `s3v4` signatures, your 
-  `S3_PROFILE_IMAGE_BUCKET` must have a public ACL and you must set 
+* Due to limitations in Open edX, if you are using `s3v4` signatures, your
+  `S3_PROFILE_IMAGE_BUCKET` must have a public ACL and you must set
   `S3_PROFILE_IMAGE_CUSTOM_DOMAIN`.
 
 Guide for configuring buckets for AWS S3
