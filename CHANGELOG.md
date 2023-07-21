@@ -1,4 +1,4 @@
-## Unreleased
+## Version 1.2.0 (2023-07-21)
 
 * [Enhancement] Support Tutor 16 and Open edX Palm, Python 3.10, and Python 3.11.
 * [Fix] Set `COURSE_METADATA_EXPORT_STORAGE` to the correct
