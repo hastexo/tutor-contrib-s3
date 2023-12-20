@@ -27,6 +27,7 @@ appropriate one:
 | Nutmeg           | `>=14.0, <15`     | `main`        | 1.0.x          |
 | Olive            | `>=15.0, <16`     | `main`        | 1.1.x          |
 | Palm             | `>=16.0, <17`     | `main`        | 1.2.x          |
+| Quince           | `>=17.0, <18`     | `main`        | 1.3.x          |
 
 [^1]: For Open edX Maple and Tutor 13, you must run version 13.2.0 or
     later. That is because this plugin uses the Tutor v1 plugin API,
