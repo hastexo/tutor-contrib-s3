@@ -1,6 +1,7 @@
 ## Unreleased
 
 * [Enhancement] Support Tutor 17 and Open edX Quince.
+* [Enhancement] Support Python 3.12, add it to the test matrix.
 
 ## Version 1.2.0 (2023-07-21)
 
