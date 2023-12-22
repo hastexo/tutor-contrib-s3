@@ -1,4 +1,4 @@
-## Unreleased
+## Version 1.3.0 (2023-12-22)
 
 * [Enhancement] Support Tutor 17 and Open edX Quince.
 
