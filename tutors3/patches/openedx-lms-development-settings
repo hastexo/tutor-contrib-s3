@@ -1,0 +1,5 @@
+{% if S3_PROFILE_IMAGE_BUCKET %}
+# A non empty base_url is necessary in development as it will be used
+# to build a static url for the profile images.
+PROFILE_IMAGE_BACKEND["options"]["base_url"] = "dummyprofileimagebaseurl"
+{% endif %}
