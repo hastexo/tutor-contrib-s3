@@ -37,7 +37,7 @@ appropriate one:
 Installation
 ------------
 
-    pip install git+https://github.com/hastexo/tutor-contrib-s3@v1.3.0
+    pip install git+https://github.com/hastexo/tutor-contrib-s3@v1.3.1
 
 Then, to enable this plugin, run:
 
