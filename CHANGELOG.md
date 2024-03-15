@@ -1,3 +1,7 @@
+## Unreleased
+
+* [Enhancement] Support Python 3.12.
+
 ## Version 1.3.1 (2024-02-21)
 
 * [Fix] Adjust options for django-storages 1.14.
