@@ -1,0 +1,3 @@
+{% if S3_PROFILE_IMAGE_BUCKET %}
+PROFILE_IMAGE_BACKEND["options"]["base_url"] = "dummyprofileimagebaseurl"
+{% endif %}
