@@ -1,3 +1,7 @@
+## Unreleased
+
+* [Enhancement] Support Tutor 18 and Open edX Redwood.
+
 ## Version 1.4.0 (2024-04-05)
 
 * [Enhancement] Support Python 3.12.
