@@ -23,11 +23,11 @@ config = {
         "FILE_UPLOAD_BUCKET": "{{ S3_STORAGE_BUCKET }}",
         "PROFILE_IMAGE_BUCKET": "",
         "GRADE_BUCKET": "{{ S3_STORAGE_BUCKET }}",
+        "GRADE_CUSTOM_DOMAIN": "{{ S3_CUSTOM_DOMAIN }}",
         "PROFILE_IMAGE_CUSTOM_DOMAIN": "",
         "PROFILE_IMAGE_MAX_AGE": "31536000",
         "ADDRESSING_STYLE": "auto",
         "SIGNATURE_VERSION": "s3v4",
-        "CUSTOM_DOMAIN": "",
     },
 }
 
