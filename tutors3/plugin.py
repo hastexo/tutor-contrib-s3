@@ -22,6 +22,7 @@ config = {
         "STORAGE_BUCKET": "openedx",
         "FILE_UPLOAD_BUCKET": "{{ S3_STORAGE_BUCKET }}",
         "PROFILE_IMAGE_BUCKET": "",
+        "CUSTOM_DOMAIN": "",
         "GRADE_BUCKET": "{{ S3_STORAGE_BUCKET }}",
         "GRADE_CUSTOM_DOMAIN": "{{ S3_CUSTOM_DOMAIN }}",
         "PROFILE_IMAGE_CUSTOM_DOMAIN": "",
