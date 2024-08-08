@@ -1,4 +1,4 @@
-## Unreleased
+## Version 1.5.0 (2024-08-08)
 
 * [Enhancement] Support Tutor 18 and Open edX Redwood.
 
