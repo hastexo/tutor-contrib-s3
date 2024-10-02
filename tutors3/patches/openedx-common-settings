@@ -15,7 +15,7 @@ AWS_S3_ENDPOINT_URL = "{{ "https" if S3_USE_SSL else "http" }}://{{ S3_HOST }}{%
 
 AWS_S3_USE_SSL = {{ "True" if S3_USE_SSL else "False" }}
 AWS_S3_SECURE_URLS = {{ "True" if S3_USE_SSL else "False" }}
-AWS_DEFAULT_ACL = None # inherit from the bucket
+AWS_DEFAULT_ACL = {% if S3_DEFAULT_ACL %}"{{ S3_DEFAULT_ACL }}"{% else %}None{% endif %}
 AWS_S3_ADDRESSING_STYLE = "{{ S3_ADDRESSING_STYLE }}"
 AWS_AUTO_CREATE_BUCKET = False
 

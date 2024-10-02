@@ -62,10 +62,15 @@ Plugin configuration
 * `S3_SIGNATURE_VERSION` (default: `"s3v4"`)
 * `S3_CUSTOM_DOMAIN` (default: `""`) - do not set if you are using AWS S3
 * `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` (default: `""`)
+* `S3_DEFAULT_ACL` (default: `None`[^null], meaning inherit from the parent bucket and fall back to the S3 provider's default canned ACL[^private] if unset)
 
 These values can be modified by the `tutor config save --set
 PARAM_NAME=VALUE` command, or by setting them in `$(tutor config
 printroot)/config.yaml`.
+
+[^null]: If you want to explicitly set a value to None in `config.yaml`, use `!!null`.
+
+[^private]: In AWS S3, the default ACL is `private`.
 
 Depending on the nature and configuration of your S3-compatible
 service, some of these values may be required to set.

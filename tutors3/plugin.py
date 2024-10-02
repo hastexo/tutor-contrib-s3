@@ -28,6 +28,7 @@ config = {
         "ADDRESSING_STYLE": "auto",
         "SIGNATURE_VERSION": "s3v4",
         "CUSTOM_DOMAIN": "",
+        "DEFAULT_ACL": None,
     },
 }
 
