@@ -49,8 +49,8 @@ Plugin configuration
 
 * `OPENEDX_AWS_ACCESS_KEY` (default: `""`)
 * `OPENEDX_AWS_SECRET_ACCESS_KEY` (default: `""`)
-* `S3_HOST` (default: `""`) - set only if using any other service than AWS S3
-* `S3_PORT` (default: `""`) - set only if using any other service than AWS S3
+* `S3_HOST` (default: `""`) — set only if using any other service than AWS S3
+* `S3_PORT` (default: `""`) — set only if using any other service than AWS S3
 * `S3_REGION` (default: `""`)
 * `S3_USE_SSL` (default: `true`)
 * `S3_STORAGE_BUCKET` (default: `"openedx"`)
@@ -60,15 +60,15 @@ Plugin configuration
 * `S3_GRADE_BUCKET` (default: `"{{ S3_STORAGE_BUCKET }}"`)
 * `S3_ADDRESSING_STYLE` (default: `"auto"`)
 * `S3_SIGNATURE_VERSION` (default: `"s3v4"`)
-* `S3_CUSTOM_DOMAIN` (default: `""`) - do not set if you are using AWS S3
+* `S3_CUSTOM_DOMAIN` (default: `""`) — do not set if you are using AWS S3
 * `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` (default: `""`)
 * `S3_DEFAULT_ACL` (default: `None`[^null], meaning inherit from the parent bucket and fall back to the S3 provider's default canned ACL[^private] if unset)
 
 These values can be modified by the `tutor config save --set
 PARAM_NAME=VALUE` command, or by setting them in `$(tutor config
-printroot)/config.yaml`.
+printroot)/config.yml`.
 
-[^null]: If you want to explicitly set a value to None in `config.yaml`, use `!!null`.
+[^null]: If you want to explicitly set a value to None in `config.yml`, use `!!null`.
 
 [^private]: In AWS S3, the default ACL is `private`.
 
@@ -81,7 +81,7 @@ service, some of these values may be required to set.
 * If you want to use an alternative S3-compatible service, you need to set the
   `S3_HOST` and `S3_PORT` parameters.
 * For a Ceph Object Gateway that doesn’t set
-  [rgw_dns_name](https://docs.ceph.com/en/latest/radosgw/config-ref/#confval-rgw_dns_name),
+  [`rgw_dns_name`](https://docs.ceph.com/en/latest/radosgw/config-ref/#confval-rgw_dns_name),
   you will need `S3_ADDRESSING_STYLE: path`.
 * Due to limitations in Open edX, if you are using `s3v4` signatures, your
   `S3_PROFILE_IMAGE_BUCKET` must have a public ACL and you must set
