@@ -24,11 +24,11 @@ appropriate one:
 |------------------|-------------------|---------------|----------------|
 | Lilac            | `>=12.0, <13`     | Not supported | Not supported  |
 | Maple            | `>=13.2, <14`[^1] | `maple`       | 0.3.x          |
-| Nutmeg           | `>=14.0, <15`     | `main`        | 1.0.x          |
-| Olive            | `>=15.0, <16`     | `main`        | 1.1.x          |
-| Palm             | `>=16.0, <17`     | `main`        | 1.2.x          |
-| Quince           | `>=17.0, <18`     | `main`        | >=1.3.0        |
-| Redwood          | `>=18.0, <19`     | `main`        | >=1.5.0        |
+| Nutmeg           | `>=14.0, <15`     | `quince`      | `>=1.0.0, <2`  |
+| Olive            | `>=15.0, <16`     | `quince`      | `>=1.1.0, <2`  |
+| Palm             | `>=16.0, <17`     | `quince`      | `>=1.2.0, <2`  |
+| Quince           | `>=17.0, <18`     | `quince`      | `>=1.3.0, <2`  |
+| Redwood          | `>=18.0, <19`     | `main`        | `>=2`          |
 
 [^1]: For Open edX Maple and Tutor 13, you must run version 13.2.0 or
     later. That is because this plugin uses the Tutor v1 plugin API,

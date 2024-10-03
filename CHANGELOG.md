@@ -1,5 +1,6 @@
 ## Unreleased
 
+* [Chore] Drop support for Python 3.8.
 * [Enhancement] Introduce `S3_DEFAULT_ACL` configuration option.
 
 ## Version 1.5.0 (2024-08-08)
