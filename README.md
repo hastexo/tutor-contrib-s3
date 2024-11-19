@@ -29,6 +29,7 @@ appropriate one:
 | Palm             | `>=16.0, <17`     | `quince`      | `>=1.2.0, <2`  |
 | Quince           | `>=17.0, <18`     | `quince`      | `>=1.3.0, <2`  |
 | Redwood          | `>=18.0, <19`     | `main`        | `>=2`          |
+| Sumac            | `>=19.0, <20`     | `main`        | `>=2.1.0`      |
 
 [^1]: For Open edX Maple and Tutor 13, you must run version 13.2.0 or
     later. That is because this plugin uses the Tutor v1 plugin API,
