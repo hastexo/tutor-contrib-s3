@@ -29,6 +29,7 @@ config = {
         "SIGNATURE_VERSION": "s3v4",
         "CUSTOM_DOMAIN": "",
         "DEFAULT_ACL": None,
+        "REQUEST_CHECKSUM_CALCULATION": "when_required",
     },
 }
 

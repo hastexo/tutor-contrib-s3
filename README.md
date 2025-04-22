@@ -64,6 +64,7 @@ Plugin configuration
 * `S3_CUSTOM_DOMAIN` (default: `""`) — do not set if you are using AWS S3
 * `S3_PROFILE_IMAGE_CUSTOM_DOMAIN` (default: `""`)
 * `S3_DEFAULT_ACL` (default: `None`[^null], meaning inherit from the parent bucket and fall back to the S3 provider's default canned ACL[^private] if unset)
+* `S3_REQUEST_CHECKSUM_CALCULATION` (default: `"when_required"`)
 
 These values can be modified by the `tutor config save --set
 PARAM_NAME=VALUE` command, or by setting them in `$(tutor config

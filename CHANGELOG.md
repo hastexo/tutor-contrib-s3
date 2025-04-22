@@ -1,3 +1,8 @@
+## Unreleased
+
+* [Enhancement] Support latest version of boto3; include the 
+  `S3_REQUEST_CHECKSUM_CALCULATION` config option.
+
 ## Version 2.1.0 (2025-01-03)
 
 * [Enhancement] Support Tutor 19 and Open edX Sumac.
