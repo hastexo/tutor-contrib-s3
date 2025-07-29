@@ -1,4 +1,4 @@
-## Unreleased
+## Version 2.3.0 (2025-07-29)
 
 * [Enhancement] Set the `AWS_S3_CLIENT_CONFIG` variable in addition to the
   individual `AWS_S3_SIGNATURE_VERSION`, `AWS_REQUEST_CHECKSUM_CALCULATION` and
