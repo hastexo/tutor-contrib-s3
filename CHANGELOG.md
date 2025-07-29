@@ -1,5 +1,8 @@
 ## Unreleased
 
+* [Enhancement] Set the `AWS_S3_CLIENT_CONFIG` variable in addition to the
+  individual `AWS_S3_SIGNATURE_VERSION`, `AWS_REQUEST_CHECKSUM_CALCULATION` and
+  `AWS_S3_ADDRESSING_STYLE` settings.
 * [Enhancement] Support Tutor 20 and Open edX Teak.
 
 ## Version 2.2.0 (2025-04-24)
