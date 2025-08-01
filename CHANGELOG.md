@@ -1,3 +1,7 @@
+## Unreleased
+
+* [Fix] Add the missing import statement for `botocore.client import Config`.
+
 ## Version 2.3.0 (2025-07-29)
 
 * [Enhancement] Set the `AWS_S3_CLIENT_CONFIG` variable in addition to the
