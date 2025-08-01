@@ -1,4 +1,4 @@
-## Unreleased
+## Version 2.3.1 (2025-08-01)
 
 * [Fix] Add the missing import statement for `botocore.client import Config`.
 
